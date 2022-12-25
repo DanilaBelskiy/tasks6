@@ -105,6 +105,7 @@ public class AllTasks {
 
     // Task 1 ----------------------------------------------------------------------------------------------------------
 
+    // Returns the Bell number
     public static int bell(int n) {
 
         if (n == 1) {
@@ -134,6 +135,7 @@ public class AllTasks {
 
     // Task 2 ----------------------------------------------------------------------------------------------------------
 
+    // Translate sentence into pig latin
     public static String translateSentence(String str) {
         String[] words = str.split(" ");
         StringBuilder[] clean_words = new StringBuilder[words.length];
@@ -165,6 +167,7 @@ public class AllTasks {
         return String.valueOf(answer);
     }
 
+    // Translate word to pig latin
     public static String translateWord(String str) {
 
         StringBuilder answer = new StringBuilder();
@@ -221,6 +224,7 @@ public class AllTasks {
 
     // Task 3 ----------------------------------------------------------------------------------------------------------
 
+    // Returns true if string = valid rgb or rgba color representation
     public static boolean validColor(String str) {
         str = str.toLowerCase();
 
@@ -305,6 +309,7 @@ public class AllTasks {
 
     // Task 4 ----------------------------------------------------------------------------------------------------------
 
+    // Returns stripped url
     public static String stripUrlParams(String str) {
 
         int question_mark_index = 0;
@@ -356,6 +361,7 @@ public class AllTasks {
         return String.valueOf(answer);
     }
 
+    // Delete some params and returns stripped url
     public static String stripUrlParams(String str, String[] to_delete) {
 
         ArrayList<String> delete = new ArrayList<>();
@@ -416,6 +422,7 @@ public class AllTasks {
 
     // Task 5 ----------------------------------------------------------------------------------------------------------
 
+    // Returns string with 3 largest words as hashtags
     public static String[] getHashTags(String str) {
 
         str = str.toLowerCase();
@@ -460,6 +467,7 @@ public class AllTasks {
 
     // Task 6 ----------------------------------------------------------------------------------------------------------
 
+    // Returns Ulam number
     public static int ulam(int n){
 
         if (n == 1) {
@@ -508,6 +516,7 @@ public class AllTasks {
 
     // Task 7 ----------------------------------------------------------------------------------------------------------
 
+    // Returns longest nonrepeating substring from input string
     public static String longestNonrepeatingSubstring(String str) {
 
         char[] str_char = str.toCharArray();
@@ -545,6 +554,7 @@ public class AllTasks {
 
     // Task 8 ----------------------------------------------------------------------------------------------------------
 
+    // Returns roman representation of number
     public static String convertToRoman(int number) {
 
         if ((number > 3999) | (number < 1)) {
@@ -584,6 +594,7 @@ public class AllTasks {
 
     // Task 9 ----------------------------------------------------------------------------------------------------------
 
+    // Returns true if formula is true
     public static boolean formula(String str) {
 
         String[] expressions = str.split("=");
@@ -638,6 +649,7 @@ public class AllTasks {
 
     // Task 10 ---------------------------------------------------------------------------------------------------------
 
+    // Returns true if one of the number's children is a palindrome
     public static boolean palindromeDescendant(long number) {
 
         String number_str = String.valueOf(number);
